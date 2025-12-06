@@ -48,7 +48,7 @@ python src/main.py
 
 ---
 
-## 🧩 4. Metodologia de Compressão
+## 4. Metodologia de Compressão
 
 O programa implementa as seguintes etapas para cada texto lido:
 
@@ -59,7 +59,7 @@ O programa implementa as seguintes etapas para cada texto lido:
 
 ---
 
-## 📝 5. Resultados e Exemplos
+## 5. Resultados e Exemplos
 
 O arquivo de saída `data/output.dat` é gerado contendo, para cada texto processado:
 
