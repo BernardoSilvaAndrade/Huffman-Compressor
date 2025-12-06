@@ -73,17 +73,17 @@ O programa implementa o algoritmo de Huffman com foco na **compressão por palav
 
 ---
 
-## 6. Exemplo de Uso e Resultados
+## 5. Exemplo de Uso e Resultados
 
 Para ilustrar o processo de compressão, utilizamos o seguinte texto no arquivo `data/input.dat`:
 
-### 6.1. Conteúdo de `data/input.dat`
+### 5.1. Conteúdo de `data/input.dat`
 
 ```text
 Minha casa nao tem um portão grande. 
 O portão tem uma cor azul.
 ```
-### 6.2. Conteúdo de `data/output.dat` (Resultado da Compressão)
+### 5.2. Conteúdo de `data/output.dat` (Resultado da Compressão)
 
 O `output.dat` gerado exibe o resultado da compressão para o texto acima:
 
