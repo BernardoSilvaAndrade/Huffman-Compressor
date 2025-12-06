@@ -32,7 +32,7 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 
 ## 3. Como Executar o Código
 
-### 3.1 Preparação
+### 3.1. Preparação
 
 1.  **Verificação de Arquivos:** Certifique-se de que a pasta `data/` existe na raiz do projeto.
 2.  **Configuração de Entrada:** No arquivo `data/input.dat`, insira os textos que deseja comprimir. Cada trecho de texto deve ser separado por uma linha em branco.
@@ -43,7 +43,7 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 
 A execução deve ser feita a partir do **diretório raiz do projeto** para garantir que o Python localize a pasta `src/` e seus módulos:
 
-# Execute o script principal
+### 3.3. Apenas execute o script principal
 python src/main.py
 
 ---
