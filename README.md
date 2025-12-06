@@ -73,14 +73,49 @@ O programa implementa o algoritmo de Huffman com foco na **compressão por palav
 
 ---
 
-## 5. Resultados e Exemplos
+## 6. Exemplo de Uso e Resultados
 
-O arquivo de saída `data/output.dat` é gerado contendo, para cada texto processado:
+Para ilustrar o processo de compressão, utilizamos o seguinte texto no arquivo `data/input.dat`:
 
-1.  **Estrutura da Árvore de Huffman:** Em formato textual serializado (pré-ordem), essencial para a decodificação.
-2.  **Conjunto de Códigos Gerados:** O mapa de símbolo (palavra) para Código Binário.
-3.  **Texto Comprimido:** A sequência de bits (separada por espaço).
-4.  **Análise:** Informações suficientes para permitir a decodificação, como a quantidade de bits comprimidos e a Taxa de Compressão obtida.
+### 6.1. Conteúdo de `data/input.dat`
+
+```text
+Minha casa nao tem um portão grande. 
+O portão tem uma cor azul.
+```
+### 6.2. Conteúdo de `data/output.dat` (Resultado da Compressão)
+
+O `output.dat` gerado exibe o resultado da compressão para o texto acima:
+
+#### 1. Conjunto de Códigos Gerados (Símbolo: Código Binário)
+```text
+   'azul': 1111
+   'casa': 1101
+   'cor': 1110
+   'grande': 0110
+   'minha': 1100
+   'nao': 0111
+   'o': 010
+   'portão': 100  <-- Código curto (Frequência 2)
+   'tem': 00      <-- Código mais curto (Frequência 2)
+   'um': 1010
+   'uma': 1011
+```
+#### 2. Estrutura da Árvore de Huffman (Pré-Ordem)
+```text
+(I:13) (I:5) [tem:2] (I:3) [o:1] (I:2) [grande:1] [nao:1] (I:8) (I:4) [portão:2] (I:2) [um:1] [uma:1] (I:4) (I:2) [minha:1] [casa:1] (I:2) [cor:1] [azul:1]
+```
+#### 3. Texto Comprimido (Sequência de Bits)
+```text
+1100 1101 0111 00 1010 100 0110 010 100 00 1011 1110 1111
+```
+#### 4. Análise e Decodificação
+```text
+-> Palavras Únicas (Símbolos): 11
+   -> Bits Comprimidos: 45
+   -> Taxa de Compressão (Aprox.): 91.35%
+   -> Decodificação de Teste: minha casa nao tem um portão grande o portão tem uma cor azul
+```
 
 ### Conclusão
 
