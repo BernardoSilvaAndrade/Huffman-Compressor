@@ -41,7 +41,7 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 
 A execução deve ser feita a partir do **diretório raiz do projeto** para garantir que o Python localize a pasta `src/` e seus módulos:
 
-```bash
+
 # Navegue até o diretório principal do projeto
 # (Ex: Implementa-o-do-C-digo-de-Huffman-para-Compress-o-de-Texto-main)
 
