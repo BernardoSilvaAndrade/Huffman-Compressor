@@ -48,7 +48,7 @@ python src/main.py
 
 ---
 
-## 🧩 4. Metodologia de Compressão
+## 4. Metodologia de Compressão
 
 O programa implementa o algoritmo de Huffman com foco na **compressão por palavra (símbolo)** e segue as seguintes etapas:
 
