@@ -6,9 +6,9 @@
 
 ## 🎯 1. Introdução ao Projeto
 
-[cite_start]Este trabalho tem como objetivo consolidar o conhecimento sobre **estruturas em árvore** e **compressão de dados** por meio da implementação prática do algoritmo de **Huffman**[cite: 9, 10].
+Este trabalho tem como objetivo consolidar o conhecimento sobre **estruturas em árvore** e **compressão de dados** por meio da implementação prática do algoritmo de **Huffman**.
 
-[cite_start]O programa desenvolve um método capaz de realizar a compressão de pequenos trechos de texto utilizando o Código de Huffman como técnica de **codificação estatística sem perdas (lossless)**[cite: 11, 12]. [cite_start]O algoritmo se baseia na frequência de ocorrência das palavras (símbolos) para construir uma árvore binária ponderada, que associa códigos binários menores aos símbolos mais frequentes, promovendo a redução do tamanho total da representação[cite: 12].
+O programa desenvolve um método capaz de realizar a compressão de pequenos trechos de texto utilizando o Código de Huffman como técnica de **codificação estatística sem perdas (lossless)**. O algoritmo se baseia na frequência de ocorrência das palavras (símbolos) para construir uma árvore binária ponderada, que associa códigos binários menores aos símbolos mais frequentes, promovendo a redução do tamanho total da representação.
 
 ---
 
@@ -16,8 +16,8 @@
 
 ### Pré-requisitos
 
-* [cite_start]**Linguagem:** Python 3 (código compatível com sistemas Linux - Ubuntu 24.04 - e Windows)[cite: 35].
-* [cite_start]**Dependências:** O projeto utiliza apenas bibliotecas padrão do Python (como `heapq` e `os`), não requerendo instalações externas complexas[cite: 36].
+* **Linguagem:** Python 3 (código compatível com sistemas Linux - Ubuntu 24.04 - e Windows).
+* **Dependências:** O projeto utiliza apenas bibliotecas padrão do Python (como `heapq` e `os`), não requerendo instalações externas complexas.
 
 ### Estrutura Modular
 
@@ -26,7 +26,7 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 * **`huffman.py`:** Contém o núcleo do algoritmo (Nó, construção da árvore, cálculo de frequências, geração de códigos, serialização e decodificação).
 * **`file_manager.py`:** Responsável pela orquestração do processo, lendo o `input.dat` e escrevendo os resultados no `output.dat`.
 * **`main.py`:** Ponto de entrada e execução principal do programa.
-* [cite_start]**`data/`:** Pasta que armazena os arquivos de entrada (`input.dat`) e saída (`output.dat`)[cite: 38].
+* **`data/`:** Pasta que armazena os arquivos de entrada (`input.dat`) e saída (`output.dat`).
 
 ---
 
@@ -34,8 +34,8 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 
 ### 3.1. Preparação
 
-1.  [cite_start]Crie a pasta `data/` na raiz do projeto, se ela ainda não existir[cite: 38].
-2.  Crie o arquivo de entrada `data/input.dat`. [cite_start]Ele deve conter pelo menos três trechos de texto, separados por uma linha em branco, contendo frases em português com palavras repetidas[cite: 16, 28].
+1.  Crie a pasta `data/` na raiz do projeto, se ela ainda não existir.
+2.  Crie o arquivo de entrada `data/input.dat`. Ele deve conter pelo menos três trechos de texto, separados por uma linha em branco, contendo frases em português com palavras repetidas.
 
 ### 3.2. Execução por Linha de Comando
 
@@ -69,10 +69,10 @@ O programa implementa as seguintes etapas para cada texto lido:
 
 O arquivo de saída `data/output.dat` é gerado contendo, para cada texto processado:
 
-1.  [cite_start]**Estrutura da Árvore de Huffman:** Em formato textual serializado (pré-ordem), essencial para a decodificação[cite: 17].
-2.  [cite_start]**Conjunto de Códigos Gerados:** O mapa de símbolo (palavra) para Código Binário[cite: 18].
-3.  [cite_start]**Texto Comprimido:** A sequência de bits (separada por espaço)[cite: 19].
-4.  [cite_start]**Análise:** Informações suficientes para permitir a decodificação[cite: 20], como a quantidade de bits comprimidos e a Taxa de Compressão obtida.
+1.  **Estrutura da Árvore de Huffman:** Em formato textual serializado (pré-ordem), essencial para a decodificação.
+2.  **Conjunto de Códigos Gerados:** O mapa de símbolo (palavra) para Código Binário.
+3.  **Texto Comprimido:** A sequência de bits (separada por espaço).
+4.  **Análise:** Informações suficientes para permitir a decodificação, como a quantidade de bits comprimidos e a Taxa de Compressão obtida.
 
 ### Conclusão
 
