@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 1. Introdução ao Projeto
+## 1. Introdução ao Projeto
 
 Este trabalho tem como objetivo consolidar o conhecimento sobre **estruturas em árvore** e **compressão de dados** por meio da implementação prática do algoritmo de **Huffman**.
 
@@ -12,7 +12,7 @@ O programa desenvolve um método capaz de realizar a compressão de pequenos tre
 
 ---
 
-## ⚙️ 2. Estrutura e Pré-requisitos
+## 2. Estrutura e Pré-requisitos
 
 ### Pré-requisitos
 
@@ -30,27 +30,21 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 
 ---
 
-## 🚀 3. Como Executar o Código
+## 3. Como Executar o Código
 
-### 3.1. Preparação
+### 3.1 Preparação
 
-1.  Crie a pasta `data/` na raiz do projeto, se ela ainda não existir.
-2.  Crie o arquivo de entrada `data/input.dat`. Ele deve conter pelo menos três trechos de texto, separados por uma linha em branco, contendo frases em português com palavras repetidas.
+1.  **Verificação de Arquivos:** Certifique-se de que a pasta `data/` existe na raiz do projeto.
+2.  **Configuração de Entrada:** No arquivo `data/input.dat`, insira os textos que deseja comprimir. Cada trecho de texto deve ser separado por uma linha em branco.
+
+> 💡 **Dica:** Utilize frases em português com palavras recorrentes, pois a repetição de símbolos (palavras) é essencial para observar a eficiência do algoritmo de Huffman.
 
 ### 3.2. Execução por Linha de Comando
 
 A execução deve ser feita a partir do **diretório raiz do projeto** para garantir que o Python localize a pasta `src/` e seus módulos:
 
-
-# Navegue até o diretório principal do projeto
-# (Ex: Implementa-o-do-C-digo-de-Huffman-para-Compress-o-de-Texto-main)
-
 # Execute o script principal
 python src/main.py
-
-### Observação sobre Imports
-
-A organização modular exige que as classes e funções sejam importadas entre os arquivos (`main.py` importa `file_manager.py`, que importa `huffman.py`). O comando `python src/main.py` garante que essas referências internas sejam resolvidas corretamente.
 
 ---
 
