@@ -1,0 +1,30 @@
+--- Resultados da Compressão de Huffman ---
+
+### TEXTO 1 ###
+Texto Original: Minha casa nao tem um portão grande. O portão tem uma cor azul.
+
+1. Estrutura da Árvore (Pré-Ordem - Para Decodificação):
+(I:13) (I:5) [tem:2] (I:3) [o:1] (I:2) [grande:1] [nao:1] (I:8) (I:4) [portão:2] (I:2) [um:1] [uma:1] (I:4) (I:2) [minha:1] [casa:1] (I:2) [cor:1] [azul:1]
+
+2. Conjunto de Códigos Gerados (Símbolo: Código Binário):
+   'azul': 1111
+   'casa': 1101
+   'cor': 1110
+   'grande': 0110
+   'minha': 1100
+   'nao': 0111
+   'o': 010
+   'portão': 100
+   'tem': 00
+   'um': 1010
+   'uma': 1011
+
+3. Texto Comprimido (Sequência de Bits, separados por espaço):
+1100 1101 0111 00 1010 100 0110 010 100 00 1011 1110 1111
+
+   -> Palavras Únicas (Símbolos): 11
+   -> Bits Comprimidos: 45
+   -> Taxa de Compressão (Aprox.): 91.35%
+   -> Decodificação de Teste: minha casa nao tem um portão grande o portão tem uma cor azul
+---
+
