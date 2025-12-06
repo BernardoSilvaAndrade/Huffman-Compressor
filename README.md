@@ -48,14 +48,28 @@ python src/main.py
 
 ---
 
-## 4. Metodologia de Compressão
+## 🧩 4. Metodologia de Compressão
 
-O programa implementa as seguintes etapas para cada texto lido:
+O programa implementa o algoritmo de Huffman com foco na **compressão por palavra (símbolo)** e segue as seguintes etapas:
 
-1.  **Cálculo de Frequência:** A frequência de cada palavra é calculada, e a pontuação é removida para padronizar os símbolos.
-2.  **Construção da Árvore:** Utilizando a frequência, a árvore de Huffman é construída usando uma fila de prioridade, combinando os nós de menor frequência.
-3.  **Geração dos Códigos:** Um percurso na árvore define os códigos binários: `0` para o ramo esquerdo e `1` para o ramo direito.
-4.  **Compressão:** O texto é percorrido novamente, e cada palavra é substituída por seu respectivo código binário.
+### 1. Pré-processamento e Cálculo de Frequência
+* A função `calcular_frequencia_palavras` lê o texto de entrada.
+* Todas as palavras são convertidas para minúsculas.
+* A pontuação básica (ex: `.,;:"'()`) é removida das palavras para garantir que as ocorrências sejam contadas como o mesmo símbolo (ex: "grande." e "grande" são tratados como `grande`).
+* É calculado o total de ocorrências (frequência) de cada palavra única.
+
+### 2. Construção da Árvore de Huffman
+* A construção da árvore utiliza uma **fila de prioridade (Min-Heap)**, implementada pela biblioteca padrão do Python, `heapq`.
+* Os dois nós com as **menores frequências** são extraídos e combinados em um novo nó interno, cuja frequência é a soma dos seus filhos.
+* **Consistência de Códigos:** Para garantir a reprodutibilidade dos códigos, a regra de desempate estabelece que o nó de menor frequência seja sempre alocado ao **ramo esquerdo (código 0)** e o de maior frequência ao **ramo direito (código 1)**. Este processo se repete até que reste apenas um nó: a raiz da árvore. 
+
+### 3. Geração dos Códigos e Compressão
+* A função `gerar_codigos_huffman` percorre a árvore, gerando um código binário de tamanho variável para cada palavra.
+* Os códigos são gerados de forma a serem **prefixos livres**, garantindo que nenhum código seja o prefixo de outro, o que permite a decodificação unívoca.
+* O texto original é então percorrido, e cada palavra é substituída pelo seu respectivo código binário, gerando a sequência final de bits comprimidos.
+
+### 4. Geração do Output
+* O arquivo `output.dat` registra a **Estrutura da Árvore serializada** e o **Conjunto de Códigos**. Essas informações são essenciais e suficientes para permitir a decodificação completa do texto comprimido.
 
 ---
 
