@@ -30,22 +30,27 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 
 ---
 
-## 🚀 3. Como Executar o Código
+## 3. Como Executar o Código
 
-### 3.1. Preparação dos Arquivos
+### 3.1. Instalação e Preparação
 
-1.  **Verificação de Arquivos:** Certifique-se de que a pasta `data/` existe na raiz do projeto.
-2.  **Configuração de Entrada:** No arquivo `data/input.dat`, insira os textos que deseja comprimir. Cada trecho de texto deve ser separado por uma linha em branco.
+Para começar, você precisa clonar o repositório e preparar o ambiente:
 
-> 💡 **Dica:** Utilize frases em português com palavras recorrentes para observar a eficiência do algoritmo de Huffman.
+1.  **Clone o repositório:**
+    ```bash
+    git clone <URL_DO_SEU_REPOSITÓRIO_GIT>
+    cd Nome-do-Diretorio-do-Projeto
+    ```
+2.  **Verifique a estrutura:** Certifique-se de que a pasta `data/` existe na raiz do projeto.
+3.  **Configure a Entrada:** No arquivo `data/input.dat`, insira os textos que deseja comprimir. Cada trecho deve ser separado por uma linha em branco.
+
+> [cite_start]💡 **Dica:** O código foi testado para compatibilidade com Python 3.6 ou superior, conforme os requisitos do trabalho[cite: 34].
 
 ### 3.2. Execução do Compressor
 
-A execução deve ser feita a partir do **diretório raiz do projeto** (onde a pasta `src/` está localizada) para garantir que o Python encontre o script principal:
+A execução deve ser feita a partir do **diretório raiz do projeto** (onde a pasta `src/` está localizada):
 
 ```bash
-# Execute o script principal
-python src/main.py
 # Execute o script principal
 python src/main.py
 ```
