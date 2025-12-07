@@ -38,7 +38,7 @@ Para começar, você precisa clonar o repositório e preparar o ambiente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <https://github.com/BernardoSilvaAndrade/Huffman-Compressor>
+    git clone https://github.com/BernardoSilvaAndrade/Huffman-Compressor
     cd Huffman-Compressor
     ```
 2.  **Verifique a estrutura:** Certifique-se de que a pasta `data/` existe na raiz do projeto.
