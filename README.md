@@ -38,13 +38,11 @@ Para começar, você precisa clonar o repositório e preparar o ambiente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITÓRIO_GIT>
-    cd Nome-do-Diretorio-do-Projeto
+    git clone <https://github.com/BernardoSilvaAndrade/Huffman-Compressor>
+    cd Huffman-Compressor
     ```
 2.  **Verifique a estrutura:** Certifique-se de que a pasta `data/` existe na raiz do projeto.
 3.  **Configure a Entrada:** No arquivo `data/input.dat`, insira os textos que deseja comprimir. Cada trecho deve ser separado por uma linha em branco.
-
-> [cite_start]💡 **Dica:** O código foi testado para compatibilidade com Python 3.6 ou superior, conforme os requisitos do trabalho[cite: 34].
 
 ### 3.2. Execução do Compressor
 
