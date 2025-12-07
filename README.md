@@ -30,23 +30,25 @@ O código-fonte foi dividido em módulos na pasta `src/` para garantir maior **o
 
 ---
 
-## 3. Como Executar o Código
+## 🚀 3. Como Executar o Código
 
-### 3.1. Preparação
+### 3.1. Preparação dos Arquivos
 
 1.  **Verificação de Arquivos:** Certifique-se de que a pasta `data/` existe na raiz do projeto.
 2.  **Configuração de Entrada:** No arquivo `data/input.dat`, insira os textos que deseja comprimir. Cada trecho de texto deve ser separado por uma linha em branco.
 
-> 💡 **Dica:** Utilize frases em português com palavras recorrentes, pois a repetição de símbolos (palavras) é essencial para observar a eficiência do algoritmo de Huffman.
+> 💡 **Dica:** Utilize frases em português com palavras recorrentes para observar a eficiência do algoritmo de Huffman.
 
-### 3.2. Execução por Linha de Comando
+### 3.2. Execução do Compressor
 
-A execução deve ser feita a partir do **diretório raiz do projeto** para garantir que o Python localize a pasta `src/` e seus módulos:
+A execução deve ser feita a partir do **diretório raiz do projeto** (onde a pasta `src/` está localizada) para garantir que o Python encontre o script principal:
 
-### 3.3. Apenas execute o script principal
+```bash
+# Execute o script principal
 python src/main.py
-
----
+# Execute o script principal
+python src/main.py
+```
 
 ## 4. Metodologia de Compressão
 
